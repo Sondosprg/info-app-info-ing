@@ -1,0 +1,318 @@
+/* 
+HomePage
+*/
+
+
+
+.title h2 .s,
+.title .o {
+  transition: var(--transition-btn);
+  animation: var(--animation-showLetter);
+}
+
+.title .o {
+  animation-delay: 3.1s;
+}
+
+
+
+.title:before {
+  content: '';
+  position: absolute;
+  width: 50vw;
+  height: 10vh;
+  margin-top: 15vh;
+  top: 0;
+  right: 0;
+  background: var(--bg-clr);
+  animation: var(--animation-scan);
+}
+
+
+/* 
+description
+*/
+.description {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3rem;
+}
+
+.description p {
+  font-size: var(--font-size-link);
+  color: var(--text-clr);
+  font-weight: var(--font-weight-p);
+  letter-spacing: var(--letter-spacing);
+}
+
+
+
+/* 
+btn
+*/
+.btn {
+  perspective: var(--perspective);
+  height:var(--height-title);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn button {
+  cursor: pointer;
+  background: var(--main-clr);
+  transform-style: var(--transform-style);
+  padding: var(--padding-btn);
+  border-radius: var(--border-rad);
+  animation: var(--animation-showBtn);
+  transition: var(--transition-btn);
+}
+
+.btn button a {
+  color: var(--text-clr);
+  font-size: var(--font-size-link);
+  font-weight: var(--font-weight-link);
+}
+
+button:hover {
+  scale: var(--scale-btn);
+  background: var(--btn-hover);
+
+}
+
+
+
+/* 
+Paino
+*/
+#line2 {
+  left: 1rem;
+}
+
+#line3 {
+  left: 0.5rem;
+}
+
+#line3 {
+
+  left: 0.10rem;
+}
+
+#line4 {
+  left: 0.15rem;
+}
+
+#line5 {
+  left: 0.2rem;
+}
+
+#line6 {
+  left: 0.25rem;
+}
+
+#line7 {
+  left: 0.3rem;
+}
+
+#line8 {
+  left: 0.35rem;
+}
+
+
+#line9 {
+  left: 0.4rem;
+}
+
+#line10 {
+  left: 0.45rem;
+}
+
+#line11 {
+  left: 0.5rem;
+}
+
+#line12 {
+  left: 0.55rem;
+}
+
+#line13 {
+  left: 0.6rem;
+}
+
+
+.line {
+  font-size:var(--font-size-p);
+  position: absolute;
+  top: 0;
+  animation: var(--animation-Paino);
+  color: var(--text-clr);
+}
+
+
+/* 
+about link
+*/
+.about{
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.about a {
+  color: var(--text-clr);
+   font-weight: var(--font-weight-title);
+  animation: var(--animation-showAbout);
+}
+
+.about span {
+  color: var(--main-clr);
+}
+
+
+
+
+/*NIZK */
+
+
+.nizk1,
+.nizk2,
+.nizk3,
+.nizk4,
+.nizk5,
+.nizk6,
+.nizk7,
+.nizk8,
+.nizk9,
+.nizk10,
+.nizk11,
+.nizk12{
+  position:absolute;
+width:0.15rem;
+height:4rem;
+
+border-radius:50%;
+border-bottom-left-radius:-100%;
+border-bottom-right-radius:-100%;
+background-image:linear-gradient(#111,#fff);
+}
+
+.nizk1{
+  top:30%;
+left:4%;
+
+}
+
+.nizk2{
+
+top:36%;
+left:8%;
+
+}
+.nizk3{
+
+top:40%;
+left:4%;
+
+}
+
+.nizk4{
+
+top:50%;
+left:20%;
+
+}
+.nizk5{
+
+top:60%;
+left:8%;
+
+}
+
+.nizk6{
+
+top:50%;
+left:10%;
+
+}
+
+.nizk7{
+
+top:55%;
+left:5%;
+
+}
+
+.nizk8{
+
+top:10%;
+left:8%;
+
+}
+
+.nizk9{
+
+top:25%;
+left:80%;
+
+}
+
+.nizk10{
+
+top:70%;
+left:6%;
+
+}
+
+.nizk11{
+
+top:75%;
+left:12%;
+
+}
+
+.nizk12{
+
+top:60%;
+left:95%;
+
+
+}
+
+section div{
+animation:Nizk 3s 0.1s infinite ease-in;
+position:relative;
+}
+
+@keyframes Nizk{
+
+0%{
+opacity:0;
+top:0;
+
+
+}
+
+20%{
+opacity:0.5;
+
+
+}
+40%{
+opacity:1;
+
+}
+80%{
+opacity:0.5;
+
+}
+
+100%{
+opacity:0.1;
+
+}
+}
+
+

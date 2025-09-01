@@ -1,0 +1,148 @@
+/* AboutUS        */
+
+
+/* 
+    Card
+ */
+
+ .card
+ ,.btn
+ ,.contact button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+.card {
+    height: auto;
+    padding: 2rem 10%;
+    line-height: 1.4rem;
+    margin-bottom: 3rem;
+    animation:var(--animation-showParagraph);
+    transform: rotateY(30deg);
+    transform: rotateX(10deg);
+
+}
+
+.card p {
+    color: var(--text-clr);
+    font-weight: var(--font-weight-p);
+    letter-spacing: var(--letter-spacing);
+    padding: 2rem 2rem;
+    border-left: var(--border-left);
+    border-top: var(--border-top);
+    border-radius: var(--border-rad);
+
+}
+
+
+
+.card span {
+    color: var(--main-clr);
+  
+  }
+
+
+/* 
+   Social Icons
+*/
+
+.social-icons {
+    height: 5h;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    perspective: var(--perspective);
+}
+
+.social-icons .instagram-icon,
+.social-icons .github-icon,
+.social-icons .linkedin-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    transform-style: var(--transform-style);
+    transition: var(--transition-btn);
+    animation: showIcon 4s 0.1s infinite ease-in;
+    animation: var(--animation-showBtn);
+}
+
+
+/* 
+  Main Btn (Try Now) 
+ */
+
+.btn {
+    perspective: var(--perspective);
+    height: 20vh;
+}
+
+
+.btn button {
+    cursor: pointer;
+    background: var(--main-clr);
+    transform-style: var(--transform-style);
+    padding: var(--padding-btn);
+    border-radius: var(--border-rad);
+    transition: var(--transition-btn);
+    animation: var(--animation-showAbout);
+}
+
+.btn button a {
+    color: var(--text-clr);
+    font-size: var(--font-size-link);
+    font-weight: var(--font-weight-link);
+
+}
+
+button:hover {
+    scale: var(--scale-btn);
+    background: var(--btn-hover);
+
+}
+
+
+
+/* 
+   Contact Me
+ */
+
+.contact button {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    padding: 1rem 3rem;
+    border-radius: var(--border-rad);
+    background: var(--text-clr);
+    transition: var(--transition-btn);
+    gap: 0.5rem;
+
+
+}
+
+.contact button:hover,
+.email svg:hover {
+    scale: var(--scale-low);
+}
+
+
+.contact button a {
+    color: var(--bg-clr);
+    font-size: var(--font-size-link-);
+    font-weight: var(--font-weight-p);
+    letter-spacing: var(--letter-spacing);
+
+}
+
+
+
+
+.email svg {
+    position: absolute;
+    top: 1.5%;
+    left: 13.5rem;
+    color: var(--btn-hover);
+    transition: var(--transition-btn);
+}
+
+
